@@ -1,0 +1,27 @@
+// interes compuesto.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+void main()
+{
+	float capital,tasainteres,fecha,monto1,monto2,monto3;
+	cout<<"ingrese el capital: ";
+		cin>>capital;
+
+	cout<<"ingrese la tasa de interes: ";
+		cin>>tasainteres;
+
+	cout<<"ingrese los años: ";
+		cin>>fecha;
+
+    monto1=capital*fecha;
+	monto2=monto1*tasainteres;
+    monto3=monto1+monto2;
+	cout<<"El interes compuesto es: "<<monto3;
+		getch();
+}
